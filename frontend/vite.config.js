@@ -6,5 +6,7 @@ export default defineConfig({
   plugins: [react()],
   proxy: {
     '/api': 'localhost:4000/api/food/list',
+    
+   
   },
 })

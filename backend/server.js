@@ -8,6 +8,7 @@ import cartRouter from "./routes/cartRoute.js"
 
 
 
+
 const app = express()
 const port = 4000
 
@@ -23,6 +24,7 @@ app.use("/api/food",foodRouter)
 app.use("/images",express.static('uploads'))
 app.use("/api/user",userRouter)
 app.use("/api/cart",cartRouter)
+
 
 
 app.get("/",(req,res)=>{

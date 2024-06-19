@@ -1,21 +1,24 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './PlaceOrder.css'
 import { StoreContext } from '../../context/StoreContext'
+
 const PlaceOrder = () => {
+
   const {getTotalCartAmount} = useContext(StoreContext)
+
   return (
-    <form className='place-order'>
+    <form   className='place-order'>
       <div className="place-order-left">
         <p className='title'>Delivery Information</p>
         <div className="multi-fields">
-          <input required type="text" placeholder='First name'/>
-          <input required type="text" placeholder='Last name'/>
+          <input required  type="text" placeholder='First name'/>
+          <input  required type="text" placeholder='Last name'/>
         </div>
         <input required  type="email" placeholder='Email address'/>
-        <input required  type="text" placeholder='street'/>
+        <input  required  type="text" placeholder='street'/>
         <div className="multi-fields">
-          <input required  type="text" placeholder='City'/>
-          <input required type="text" placeholder='State'/>
+          <input   required  type="text" placeholder='City'/>
+          <input  required type="text" placeholder='State'/>
         </div>
         <div className="multi-fields">
           <input required type="text" placeholder='Zip code'/>
