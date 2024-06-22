@@ -28,13 +28,12 @@ Installation
 
     Clone the repository: git clone https://github.com/your-username/food-delivery-web-app.git
     Install dependencies: npm install
-    Start the server: npm run server
-    Start the client: npm run client
+    Start the server: npm run dev
 
 Environment Variables
 
     MONGODB_URI: MongoDB connection string
-   STRIPE_SECRET_KEY: secret key of stripe
+    STRIPE_SECRET_KEY: secret key of stripe
 
 Directory Structure
 
